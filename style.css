@@ -1,0 +1,220 @@
+/* ページ全体のスタイル */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* 高さを100%に設定 */
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 0px 0;
+  flex-shrink: 0; /* ヘッダーが縮まないように */
+}
+
+/* ヘッダー内のリンクのスタイル */
+header a {
+  color: white; /* リンクの色を白にする */
+  text-decoration: none; /* 下線を消す */
+  font-weight: bold; /* フォントを太字にする */
+}
+
+header a:hover {
+  text-decoration: underline; /* ホバー時に下線を表示 */
+  color: #ffeb3b; /* ホバー時に色を変える（例えば黄色） */
+}
+
+main {
+  padding: 20px;
+  margin: 0 10%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex-grow: 1; /* メインコンテンツが余分なスペースを占めるように */
+  overflow-y: auto; /* スクロール可能にする */
+}
+
+/* リンクのスタイル */
+a {
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: inline; /* インライン表示に変更 */
+  white-space: nowrap; /* 改行しないように設定 */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: #4caf50;
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+section {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 17px;
+  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #4caf50;
+  color: white;
+  position: relative;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+/* アイコンのスタイル */
+.fas {
+  color: #4caf50;
+  margin-right: 10px; /* アイコンとテキストの間にスペース */
+  font-size: 1.2rem;
+}
+
+/* アイコンと日付を横並びにする */
+.icon-date-wrapper {
+  display: flex; /* 横並びにする */
+  align-items: center; /* アイコンと日付を垂直方向で揃える */
+  margin-bottom: 10px; /* アイコンと日付の間にスペースを追加 */
+  justify-content: flex-end; /* 横並びで右寄せにする */
+}
+
+/* 画像のスタイル */
+.calendar-icon,
+.sync-icon {
+  width: 20px; /* 画像の幅を指定 */
+  height: auto; /* アスペクト比を保つ */
+  margin-right: 10px; /* 画像と日付の間にスペース */
+  white-space: nowrap; /* 改行しないように設定 */
+}
+
+/* 日付部分のスタイル */
+.date {
+  font-weight: bold;
+  color: #4caf50;
+  font-size: 0.9rem; /* 小さめのフォントサイズに変更 */
+  white-space: nowrap; /* 改行しないように設定 */
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #409bdf; /* 青色 */
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  font-size: 16px;
+}
+.next {
+  margin-left: auto;
+  margin-right: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #409bdf; /* 青色 */
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.back .next i {
+  margin-right: 8px; /* アイコンとテキストの間にスペース */
+  color: white;
+}
+
+.back .next:hover {
+  background-color: #0056b3; /* ホバー時の色 */
+  transform: scale(1.05); /* 少し大きくなる */
+}
+.back .next:active {
+  transform: scale(1); /* クリック時の反応 */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.date-container {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+pre {
+  background-color: #2e2e2e; /* 背景色 */
+  color: #f8f8f2; /* 文字色 */
+  font-family: "Courier New", Courier, monospace; /* 等幅フォント */
+  padding: 20px; /* 内側の余白 */
+  border-radius: 10px; /* 角を丸く */
+  overflow-x: auto; /* 横スクロール可能に */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
+}
+#errorNotification {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 1000;
+}
+/* 親要素にフレックスボックスを設定 */
+.parent {
+  display: flex;
+  justify-content: flex-end; /* 右寄せ */
+}
+button {
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: inline; /* インライン表示に変更 */
+  white-space: nowrap; /* 改行しないように設定 */
+}
+
+button :hover {
+  text-decoration: underline;
+}

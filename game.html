@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>素数計算機|素数判別ゲーム</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <script src="gamescript.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>おまけ.素数判別ゲーム</h1>
+    </header>
+    <main>
+      <section>
+        <div class="header">
+          <a href="https://kouryou-118103.github.io/sosu/index.html">
+            <i class="fas fa-chevron-left"></i> ホームに戻る
+          </a>
+          <div class="date-container">
+            <i class="fas fa-calendar calendar-icon"></i>
+            <span class="date">2024年12月1日　</span>
+            <i class="fas fa-sync sync-icon"></i>
+            <span class="date">2025年3月13日</span>
+          </div>
+        </div>
+        <h2>設定</h2>
+        <p>↓でゲームで出てくる最大の数を決めてください。\(2\)から\(10^{13}-1\)までの整数に対応しています。（あまり大きな数字を入力するとフリーズするので注意）数字を変えたいときは再読み込みしてください（これは改善するつもりです）。<small>恣意的に素数の確率を上げています。コンソールひらいて「sosukeisu」ってやつを1に近づけると素数が出やすくなります。</small></p>
+        <input type="number" id="maxNumberInput" placeholder="最大値" min="2" />
+        <button id="startButton" onclick="startGame()">ゲーム開始</button>
+
+        <div id="gameArea" style="display: none">
+          <h2>この数は…？</h2>
+          <p id="numberDisplay"></p>
+          <button onclick="checkPrime(true)">素数</button>
+          <button onclick="checkPrime(false)">合成数（素数じゃない）</button>
+          <p class="result" id="resultMessage"></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>2024 素数解説 by kouryou118103</p>
+    </footer>
+  </body>
+</html>
