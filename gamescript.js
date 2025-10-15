@@ -84,64 +84,66 @@ function checkPrime(isPrime) {
 
     const primeLinks = [];
     if (isNumberPrime){
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime.html", text: "素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime.html", text: "素数" });
     }else{
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-grothendieck.html", text: "グロタンディーク素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-grothendieck.html", text: "グロタンディーク素数" });
     }
     // 各素数の特性に対応したリンクを追加
     if (isTwinPrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-twin.html", text: "双子素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-twin.html", text: "双子素数" });
     }
     if (isSexyPrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-sexy.html", text: "セクシー素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-sexy.html", text: "セクシー素数" });
     }
     if (isTripletPrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-triplet.html", text: "三つ子素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-triplet.html", text: "三つ子素数" });
     }
     if (isCousinPrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-cousin.html", text: "いとこ素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-cousin.html", text: "いとこ素数" });
     }
     if (isMersennePrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-mersenne.html", text: "メルセンヌ素数" });
-    }
-    if (isEulerPrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-euler.html", text: "オイラー素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-mersenne.html", text: "メルセンヌ素数" });
     }
     if (isFermatPrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-fermat.html", text: "フェルマー素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-fermat.html", text: "フェルマー素数" });
     }
     if (isRepunitPrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-repunit.html", text: "レピュニット素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-repunit.html", text: "レピュニット素数" });
     }
     if (isSuperPrime(numberToCheck)){
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-super.html", text: "スーパー素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-super.html", text: "スーパー素数" });
     }
     if (isSophieGermainPrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-sophie.html", text: "ソフィー・ジェルマン素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-sophie.html", text: "ソフィー・ジェルマン素数" });
     }
     if (isSafePrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-safe.html", text: "安全素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-safe.html", text: "安全素数" });
     }
     if (isPalindromicPrime(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-palindromic.html", text: "回文素数" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-palindromic.html", text: "回文素数" });
     }
     if (isEmirp(numberToCheck)) {
-      primeLinks.push({ url: "https://kouryou-sosu.glitch.me/prime-emirp.html", text: "エマープ" });
+      primeLinks.push({ url: "https://kouryou-118103.github.io/sosu/prime-emirp.html", text: "エマープ" });
     }
     console.log(primeLinks)
     // リンクを生成して表示
     resultElement.innerHTML += primeLinks.map(link => `<li><a href="${link.url}" target="_blank">${link.text}</a></li>`).join("");
     resultElement.innerHTML += 'また、まだ判定機能の無い以下の素数(合成数)の可能性もあります。'
     const Apple=[]
-    Apple.push({ url: "https://kouryou-sosu.glitch.me/prime-lucas.html", text: "リュッカ素数" });
-    Apple.push({ url: "https://kouryou-sosu.glitch.me/prime-woodall.html", text: "ウッダル素数" });
-    Apple.push({ url: "https://kouryou-sosu.glitch.me/prime-carol.html", text: "キャロル素数" });
-    Apple.push({ url: "https://kouryou-sosu.glitch.me/prime-sierpinski.html", text: "サービト素数" });
+    Apple.push({ url: "https://kouryou-118103.github.io/sosu/prime-euler.html", text: "オイラー素数" });
+    Apple.push({ url: "https://kouryou-118103.github.io/sosu/prime-lucas.html", text: "リュッカ素数" });
+    Apple.push({ url: "https://kouryou-118103.github.io/sosu/prime-woodall.html", text: "ウッダル素数" });
+    Apple.push({ url: "https://kouryou-118103.github.io/sosu/prime-carol.html", text: "キャロル素数" });
+    Apple.push({ url: "https://kouryou-118103.github.io/sosu/prime-sierpinski.html", text: "サービト素数" });
     resultElement.innerHTML += Apple.map(link => `<li><a href="${link.url}" target="_blank">${link.text}</a></li>`).join("");
   }
 
   // MathJaxをレンダリング
-  MathJax.typeset();
+  if (window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise();
+  } else {
+    MathJax.typeset();
+  }
   console.log("素因数分解の結果→レンダリング完了")
 
   // 次の数字を生成
@@ -169,7 +171,9 @@ function isSexyPrime(num) {
 }
 
 function isTripletPrime(num) {
-  return isPrimeNumber(num) && isPrimeNumber(num + 2) && isPrimeNumber(num + 6);
+  if (!isPrimeNumber(num)) return false;
+  return (isPrimeNumber(num + 2) && isPrimeNumber(num + 6)) ||
+         (isPrimeNumber(num + 4) && isPrimeNumber(num + 6));
 }
 
 function isCousinPrime(num) {
@@ -178,16 +182,12 @@ function isCousinPrime(num) {
 
 function isMersennePrime(num) {
   const exp = Math.log2(num + 1);
-  return Number.isInteger(exp) && isPrimeNumber(num);
-}
-
-function isEulerPrime(num) {
-  return isPrimeNumber(num) && (num === 2 || num === 3 || num % 4 === 3);
+  return Number.isInteger(exp) && isPrimeNumber(exp) && isPrimeNumber(num);
 }
 
 function isFermatPrime(num) {
-  const exp = Math.log2(Math.log2(num + 1));
-  return isPrimeNumber(num) && Number.isInteger(exp) && (num === 3 || num === 5);
+  const exp = Math.log2(Math.log2(num - 1));
+  return Number.isInteger(exp) && isPrimeNumber(num);
 }
 
 function isRepunitPrime(num) {
@@ -244,14 +244,16 @@ function isEmirp(num) {
 // 素因数分解
 function primeFactors(n) {
   const factors = [];
-  let divisor = 2;
-  while (n >= 2) {
-    if (n % divisor === 0) {
-      factors.push(divisor);
-      n /= divisor;
-    } else {
-      divisor++;
+  while (n % 2 === 0) {
+    factors.push(2);
+    n /= 2;
+  }
+  for (let i = 3; i <= Math.sqrt(n); i += 2) {
+    while (n % i === 0) {
+      factors.push(i);
+      n /= i;
     }
   }
+  if (n > 2) factors.push(n);
   return factors;
 }
