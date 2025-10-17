@@ -78,7 +78,7 @@ section p {
   margin-bottom: 10px;
 }
 
-footer {
+#footer-placeholder footer {
   text-align: center;
   padding: 10px 0;
   background-color: #4caf50;
@@ -87,7 +87,7 @@ footer {
   width: 100%;
 }
 
-footer p {
+#footer-placeholder footer p {
   margin: 0;
 }
 /* アイコンのスタイル */
