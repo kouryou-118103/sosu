@@ -226,7 +226,12 @@ button :hover {
 /* 広告カードを横並び＋折り返し */
 div[style*="display: flex"] {
   flex-wrap: wrap; /* 幅が足りないときに折り返す */
-  justify-content: center; /* 真ん中寄せ（お好み） */
+}
+
+[id^="box"] a {
+  white-space: normal; /* 改行を許可 */
+  word-wrap: break-word; 
+  overflow-wrap: anywhere;
 }
 
 /* 各広告ボックスを安全に収める */
