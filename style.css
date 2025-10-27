@@ -222,3 +222,16 @@ button {
 button :hover {
   text-decoration: underline;
 }
+
+/* 広告カードを横並び＋折り返し */
+div[style*="display: flex"] {
+  flex-wrap: wrap; /* 幅が足りないときに折り返す */
+  justify-content: center; /* 真ん中寄せ（お好み） */
+}
+
+/* 各広告ボックスを安全に収める */
+#box1, #box2, #box3 {
+  max-width: 200px;
+  flex: 1 1 200px; /* 各ボックスが自動調整して並ぶ */
+  box-sizing: border-box; /* はみ出し防止 */
+}
