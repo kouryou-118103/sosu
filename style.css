@@ -230,8 +230,10 @@ div[style*="display: flex"] {
 }
 
 /* 各広告ボックスを安全に収める */
-#box1, #box2, #box3 {
+[id^="box"] {
   max-width: 200px;
   flex: 1 1 200px; /* 各ボックスが自動調整して並ぶ */
   box-sizing: border-box; /* はみ出し防止 */
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
